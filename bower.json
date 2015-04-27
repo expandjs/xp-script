@@ -1,7 +1,7 @@
 {
   "name": "xp-script",
   "license": "BSD-3-Clause",
-  "version": "0.8.3",
+  "version": "0.8.4",
   "description": "This element is used to load a script asynchronously.",
   "homepage": "http://www.expandjs.com/elements/xp-script",
   "authors": [
