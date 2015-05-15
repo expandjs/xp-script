@@ -113,7 +113,7 @@ It's particularly useful to perform a JSONP request.
                 XP.prependChild(head, script);
 
                 // Checking
-                if (self.state === 'complete') { return self; }
+                if (self.state === 'loaded') { return self; }
 
                 // Setting
                 self.state = 'pending';
