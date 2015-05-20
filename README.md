@@ -1,3 +1,3 @@
 # xp-script
 
-See the [`documentation page`](http://www.expandjs.com/elements/xp-script) for more information.
+See the [`documentation page`](http://expandjs.com/elements/xp-script) for more information.
