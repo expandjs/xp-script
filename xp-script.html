@@ -157,6 +157,19 @@ It's particularly useful to perform a JSONP request.
                 },
 
                 /**
+                 * The shared data.
+                 *
+                 * @attribute shared
+                 * @type Object
+                 * @notifies
+                 * @readOnly
+                 */
+                shared: {
+                    notify: true,
+                    type: Object
+                },
+
+                /**
                  * The script's src.
                  *
                  * @attribute src
