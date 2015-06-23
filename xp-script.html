@@ -16,9 +16,9 @@ It's particularly useful to perform a JSONP request.
 @group functionality
 @homepage http://expandjs.com/elements/xp-script
 
-@dependency polymer Polymer/polymer
-@dependency expandjs ExpandJS/expandjs
-@dependency xp-shared ExpandJS/xp-shared
+@dependency polymer Polymer/polymer#^1.0.4
+@dependency expandjs ExpandJS/expandjs#0.9.1
+@dependency xp-shared ExpandJS/xp-shared#0.9.1
 -->
 
 <link rel="import" href="../polymer/polymer.html">
@@ -34,7 +34,7 @@ It's particularly useful to perform a JSONP request.
     </style>
 
     <template>
-        <xp-shared data="{{shared}}"></xp-shared>
+        <xp-shared id="xpScriptShared"></xp-shared>
     </template>
 
     <script>
@@ -101,7 +101,7 @@ It's particularly useful to perform a JSONP request.
                     self._setData(data);
 
                     // Sharing
-                    if (callback) { self.set('shared.' + callback, data); }
+                    if (callback) { self.$.xpScriptShared.set('data.' + callback, data); }
 
                     // Firing
                     self.fire('xp-script-load', {firer: self, data: data, src: src});
@@ -154,19 +154,6 @@ It's particularly useful to perform a JSONP request.
                     notify: true,
                     readOnly: true,
                     value: null
-                },
-
-                /**
-                 * The shared data.
-                 *
-                 * @attribute shared
-                 * @type Object
-                 * @notifies
-                 * @readOnly
-                 */
-                shared: {
-                    notify: true,
-                    type: Object
                 },
 
                 /**
