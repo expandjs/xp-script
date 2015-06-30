@@ -96,7 +96,7 @@ It's particularly useful to perform a JSONP request.
                 self._setData(data);
 
                 // Sharing
-                if (callback) { self.set('shared.' + callback, data); }
+                if (callback) { self.share(callback, data); }
 
                 // Firing
                 self.fire('xp-script-load', {firer: self, data: data, src: src});
