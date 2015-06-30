@@ -1,7 +1,7 @@
 {
   "name": "xp-script",
   "license": "BSD-3-Clause",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "description": "A custom element used to load scripts asynchronously",
   "homepage": "http://expandjs.com/elements/xp-script",
   "authors": [
@@ -22,8 +22,8 @@
     "**/.*"
   ],
   "dependencies": {
-    "expandjs": "ExpandJS/expandjs#0.9.2",
-    "xp-shared": "ExpandJS/xp-shared#0.9.2",
+    "expandjs": "ExpandJS/expandjs#0.9.3",
+    "xp-shared-behavior": "ExpandJS/xp-shared-behavior#0.9.3",
     "polymer": "Polymer/polymer#^1.0.0"
   }
 }
