@@ -1,9 +1,9 @@
 {
   "name": "xp-script",
   "license": "BSD-3-Clause",
-  "version": "0.9.11",
+  "version": "0.10.0",
   "main": "xp-script.html",
-  "description": "A custom element used to load scripts asynchronously",
+  "description": "A custom element used to load a script asynchronously",
   "homepage": "http://expandjs.com/elements/xp-script",
   "authors": [
     "Giuliano Rullo <g.rullo@expandjs.com>",
@@ -11,17 +11,17 @@
     "Robert Manolea <r.manolea@expandjs.com>"
   ],
   "keywords": [
-    "web app",
-    "html5",
     "expandjs",
+    "web app",
+    "custom elements",
     "web-components"
   ],
   "ignore": [
     "**/.*"
   ],
   "dependencies": {
-    "expandjs": "ExpandJS/expandjs#0.9.11",
-    "xp-shared-behavior": "ExpandJS/xp-shared-behavior#0.9.11",
-    "polymer": "Polymer/polymer#^1.1.0"
+    "expandjs": "ExpandJS/expandjs#0.10.0",
+    "xp-shared-behavior": "ExpandJS/xp-shared-behavior#0.10.0",
+    "polymer": "Polymer/polymer#^1.2.0"
   }
 }
